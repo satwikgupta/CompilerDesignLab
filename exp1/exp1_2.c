@@ -8,15 +8,15 @@ int main() {
     printf("\nEnter the source file's path: ");
     scanf("%s", path);
 
-    printf("\nEnter the number of students: ");
-    scanf("%d", &n);
-
     FILE *file;
     file = fopen(path, "w");
     if(file == NULL) {
         printf("\nUnable to open!\n");
         exit(1);
     }
+
+    printf("\nEnter the number of students: ");
+    scanf("%d", &n);
     for(i = 0; i < n; i++) {
         fflush(stdin);
         printf("For student %d:\n\tName: ", (i + 1));
@@ -26,6 +26,8 @@ int main() {
 
         fprintf(file, "Student %d:-\n\tName: %s\n\tMarks: %d\n", (i + 1), name, marks);
     }
+    
     fclose(file);
+    printf("Data has been successfully written to the file.\n");
     return 0;
 }
