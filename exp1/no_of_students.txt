@@ -1,0 +1,9 @@
+Student 1:-
+	Name: Satwik Gupta
+	Marks: 10
+Student 2:-
+	Name: Ankit Gupta
+	Marks: 9
+Student 3:-
+	Name: Lalit Jangir
+	Marks: 10
