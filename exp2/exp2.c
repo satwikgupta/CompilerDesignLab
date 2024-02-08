@@ -1,3 +1,6 @@
+//Satwik Gupta
+//21UCS101
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
@@ -22,8 +25,10 @@ int main() {
     while ((c = fgetc(fp)) != EOF) {
         if (isdigit(c)) {
             fputc(c, fint);
+            fputc('\n', fint);
         } else if (c == '+' || c == '-' || c == '*' || c == '/') {
             fputc(c, fop);
+            fputc('\n', fop);
         } else if (isalpha(c)) {
             id[i++] = c;
             id[i] = '\0';
