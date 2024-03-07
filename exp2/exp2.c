@@ -1,12 +1,9 @@
-//Satwik Gupta
-//21UCS101
-
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 
 #define MAX_ID_LEN 20
-
+//
 int main() {
     FILE *fp, *fint, *fop, *fid;
     char c, id[MAX_ID_LEN];
@@ -43,12 +40,9 @@ int main() {
             }
         }
     }
-
     fclose(fp);
     fclose(fint);
     fclose(fop);
     fclose(fid);
-
     return 0;
-
 }
